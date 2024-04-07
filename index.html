@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K300R8FSD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0K300R8FSD');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Matcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FCF9F2;
+            margin: 0;
+            padding: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            
+
+        }
+
+        li {
+            background-color: #fff;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;            
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="logo.jpg" alt="pandatypinglogo" style="margin-top: 10px;">
+    </div>
+    
+    <div style="text-align: center;">
+        
+    </div>
+    
+
+    <input type="text" id="inputField" placeholder="Enter a string" oninput="calculateAndDisplayCategories()">
+
+    <h2>Top Categories:</h2>
+
+    <p>Are you thinking of...</p>
+    <p id="li_context"></p>
+
+    <ul id="topCategoriesList">
+        <!-- Categories will be displayed here -->
+    </ul>
+
+    <h1><span id="visits"></span></h1>
+    <!-- Include 'chineseData.js' -->
+    <script src="chineseData.js"></script>
+    <script src="chineseVoca.js"></script>
+    <script src="dbData.js"></script>
+    <!-- Include 'main.js' -->
+    <script src="main.js"></script>
+
+
+
+
+
+    <!--https://www.youtube.com/watch?v=WTHrtiMEjk0-->
+</body>
+</html>
+
